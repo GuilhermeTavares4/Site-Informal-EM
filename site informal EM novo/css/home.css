@@ -1,0 +1,15 @@
+:root{
+}
+
+.video{
+    aspect-ratio: 16/9;
+    width: 80%;
+    display:block;
+    margin-bottom: 2rem;
+}
+
+@media(max-width: 46.875em){
+    .video{
+        margin-inline: auto;
+    }
+}
