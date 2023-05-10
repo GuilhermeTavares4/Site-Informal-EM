@@ -201,13 +201,14 @@ footer{
 #hamburger-nav{
    display: none;
    width: 75vw;
-   min-height: 100vh;
+   height: 100%;
    background-image:linear-gradient(45deg, hsl(108, 40%, 11%), hsl(108, 40%, 16%));
    position: fixed;
    right: 0;
    top: 0;
    z-index: 999;
    padding: 3em 1em;
+   overflow-y: auto;
    transition: transform ease .4s;
    transform-origin: right; 
 }
@@ -233,6 +234,10 @@ footer{
 
 .hidden{
    transform: translateX(100%);
+}
+
+.overflow-hidden{
+   overflow-y: hidden;
 }
 
 @media(max-width: 46.875em){
