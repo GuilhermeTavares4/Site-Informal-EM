@@ -271,7 +271,7 @@ footer{
    }
 
    .container-nav > ul{
-      justify-content: flex-start;
+      justify-content: flex-end;
       width: 90%;
       margin-inline: auto;
    }
@@ -279,7 +279,6 @@ footer{
    .container-nav > ul > li{
       flex-grow: 0;
       flex-basis: auto;
-      margin-left: auto;
    }
 
    .container-nav > ul > li > a{
@@ -297,7 +296,6 @@ footer{
 
    .menu-toggle{        
       display: flex;
-      margin-left: auto;
    }
 
 }
