@@ -6,6 +6,8 @@ function toggleAction(){
     menuToggle.classList.toggle('isActive');
     hamburgerNav.classList.toggle('hidden');
     darken.classList.toggle('show');
+    document.body.classList.toggle('overflow-hidden');
+
 }
 
 hamburgerNav.addEventListener("click", (e) =>{
