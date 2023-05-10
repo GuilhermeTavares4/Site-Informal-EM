@@ -117,7 +117,7 @@ nav{
 
 main{
    grid-area: main;
-   padding-block: 3em;
+   padding-block: 2.5em;
    padding-right: 2em;
    font-size: clamp(1rem, 2vw, 1.08rem);
 }
@@ -128,7 +128,7 @@ main > *{
 
 main p{
    line-height: 1.25;
-   text-indent: 1rem;
+   text-indent: 1.5em;
    text-align: justify;
 }
 
@@ -271,7 +271,7 @@ footer{
    }
 
    .container-nav > ul{
-      justify-content: space-between;
+      justify-content: flex-start;
       width: 90%;
       margin-inline: auto;
    }
@@ -279,6 +279,7 @@ footer{
    .container-nav > ul > li{
       flex-grow: 0;
       flex-basis: auto;
+      margin-left: auto;
    }
 
    .container-nav > ul > li > a{
@@ -295,7 +296,8 @@ footer{
    }
 
    .menu-toggle{        
-      display: flex;       
+      display: flex;
+      margin-left: auto;
    }
 
 }
