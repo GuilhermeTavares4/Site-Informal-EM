@@ -274,6 +274,7 @@ footer{
       justify-content: flex-end;
       width: 90%;
       margin-inline: auto;
+      gap: 1em;
    }
 
    .container-nav > ul > li{
