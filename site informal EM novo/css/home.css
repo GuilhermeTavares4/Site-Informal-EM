@@ -13,21 +13,6 @@
     }
 }
 
-
-.table-container{
-    margin-top: 2em;
-    margin-bottom: .3em;
-}
-
-caption{
-    text-transform: capitalize;
-    font-size: 1.75rem;
-    font-weight: bold;
-    margin-bottom: .25em;
-    text-align: start;
-
-}
-
 table{
     width: 100%;
     border-collapse: collapse;
@@ -40,7 +25,7 @@ td, th{
     
 th{
     text-align: start;
-    background-color:hsl(227, 55%, 36%) ;
+    background-color:hsl(227, 50%, 36%) ;
     color: hsl(0, 0%, 97%);
 }
 
@@ -51,13 +36,10 @@ tr:nth-of-type(2n){
 @media (max-width: 62.5em){
 
     .table-container{
-        height: 65vh;
+        height: 60vh;
         overflow: auto;
     }
 
-    caption{
-        text-align: center;
-    }
    
     th{
         display: none;
@@ -65,7 +47,7 @@ tr:nth-of-type(2n){
 
     td{
         display: grid;
-        grid-template-columns: 20ch auto;
+        grid-template-columns: clamp(3rem, 42%, 20ch) auto;
         gap: .6em;        
     }
 
