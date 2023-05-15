@@ -5,11 +5,92 @@
     aspect-ratio: 16/9;
     width: 80%;
     display: block;
-    margin-bottom: 2em;
 }
 
 @media(max-width: 46.875em){
     .video{
         margin-inline: auto;
+    }
+}
+
+
+.table-container{
+    margin-top: 2em;
+    margin-bottom: .3em;
+}
+
+caption{
+    text-transform: capitalize;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: .25em;
+    text-align: start;
+
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: hsl(0, 0%, 85%);
+}
+
+td, th{
+    padding: .8em;
+}
+    
+th{
+    text-align: start;
+    background-color:hsl(227, 55%, 36%) ;
+    color: hsl(0, 0%, 97%);
+}
+
+tr:nth-of-type(2n){
+    background-color: hsl(0, 0%, 80%);
+}
+
+@media (max-width: 62.5em){
+
+    .table-container{
+        height: 65vh;
+        overflow: auto;
+    }
+
+    caption{
+        text-align: center;
+    }
+   
+    th{
+        display: none;
+    }
+
+    td{
+        display: grid;
+        grid-template-columns: 20ch auto;
+        gap: .6em;        
+    }
+
+    tr:nth-of-type(1n) > td:not(:last-of-type){
+        border-bottom: 1px solid hsl(0, 0%, 78%);
+
+    }
+
+    tr:nth-of-type(2n) > td:not(:last-of-type){
+        border-bottom: 1px solid hsl(0, 1%, 73%);
+    }
+
+    td:first-child{
+        padding-top: 1.5rem;
+    }
+
+    td:last-child{
+        padding-bottom: 1.5rem;
+    }
+
+    td::before{
+        content: attr(data-cell) ':';
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: center;
+
     }
 }
