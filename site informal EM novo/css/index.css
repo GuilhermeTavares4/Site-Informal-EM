@@ -9,7 +9,7 @@
    --text-normal: 1.15rem;
    --text-big: 1.25rem;
    --text-small: 1rem;
-   --blue-title: hsl(227, 40%, 36%);
+   --blue-title: hsl(227, 45%, 36%);
    --test: 1px solid black;
    --hamburger-gap: .5em;
    --hamburger-height: 4px;
@@ -66,7 +66,7 @@ body{
 }
 
 .container{
-   width: clamp(320px, 90vw, 975px);
+   width: clamp(320px, 90vw, 1025px);
    margin-inline: auto;
 }
 
@@ -122,8 +122,9 @@ main{
    font-size: clamp(1rem, 2vw, 1.08rem);
 }
 
-main > *{
-   margin-bottom: .6em;
+main > h1{
+   margin-top: 1em;
+   margin-bottom: .3em;
 }
 
 main p{
@@ -240,6 +241,34 @@ footer{
    overflow-y: hidden;
 }
 
+.drop{
+   position: relative;
+}
+
+.drop > div{
+   display: grid;
+   width: 100%;
+   grid-template-rows: 0fr;
+   background-color: hsl(108, 40%, 33%);
+   color:white;
+   position: absolute;
+   transition: grid-template-rows .3s ease, padding .3s ease; 
+}
+
+.drop > div > ul{
+   list-style: none;
+   text-decoration: none;
+   overflow:hidden;
+   display: flex;
+   flex-direction: column;
+   gap: .7em;
+}
+
+.drop:hover > div{
+   padding: .5em; 
+   grid-template-rows: 1fr;
+}
+
 @media(max-width: 46.875em){
    .container{
       width: 100%;
@@ -269,6 +298,7 @@ footer{
    }
 
    nav{
+
       position: sticky;
       z-index: 9;
       left: 0;
