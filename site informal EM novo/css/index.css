@@ -221,7 +221,7 @@ main p{
 
 .side-list > li::before{
    content: '';
-   width: .25em;
+   width: .22em;
    aspect-ratio: 1/1.8;
    position: absolute;
    left: -.8em;
