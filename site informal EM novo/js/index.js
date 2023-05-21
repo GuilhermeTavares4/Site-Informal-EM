@@ -15,3 +15,13 @@ hamburgerNav.addEventListener("click", (e) =>{
         toggleAction();
     }
 })
+
+const links = document.querySelectorAll(".link")
+
+links.forEach((item) =>{
+    item.addEventListener('mouseover', (e) => {
+        let width = e.target.getBoundingClientRect().width;
+        aaa =   document.querySelector(e.currentTarget);
+        console.log(aaa)
+    })
+});
