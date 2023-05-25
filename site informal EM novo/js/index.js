@@ -7,7 +7,6 @@ function toggleAction(){
     hamburgerNav.classList.toggle('hidden');
     darken.classList.toggle('show');
     document.body.classList.toggle('overflow-hidden');
-
 }
 
 hamburgerNav.addEventListener("click", (e) =>{
@@ -16,12 +15,13 @@ hamburgerNav.addEventListener("click", (e) =>{
     }
 })
 
-const links = document.querySelectorAll(".link")
+const links = document.querySelectorAll(".link");
 
 links.forEach((item) =>{
     item.addEventListener('mouseover', (e) => {
-        let width = e.target.getBoundingClientRect().width;
-        aaa =   document.querySelector(e.currentTarget);
-        console.log(aaa)
+        let width = e.currentTarget.getBoundingClientRect().width;
+        let height = e.currentTarget.getBoundingClientRect().height;
+        e.currentTarget.style.setProperty('--linkwidth', width + 'px');
+        e.currentTarget.style.setProperty('--linkheight', height + 'px');
     })
 });
