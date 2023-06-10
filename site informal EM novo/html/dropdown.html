@@ -1,0 +1,42 @@
+<li class="drop"> <a class="button-link white-text" href="#">Projetos</a> 
+    <div>
+        <ul>
+            <li>Projeto 1</li>
+            <li>Projeto 2</li>
+            <li>Projeto 3</li>
+            <li>Projeto 4</li>
+        </ul>
+    </div>
+</li>
+
+
+
+<!--\f078-->
+
+.drop{
+    position: relative;
+ }
+ 
+ .drop > div{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 0fr;
+    background-color: hsl(108, 40%, 33%);
+    color:white;
+    position: absolute;
+    transition: grid-template-rows .3s ease, padding .3s ease; 
+ }
+ 
+ .drop > div > ul{
+    list-style: none;
+    text-decoration: none;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+ }
+ 
+ .drop:hover > div{
+    padding: .5em; 
+    grid-template-rows: 1fr;
+ }
